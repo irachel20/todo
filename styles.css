@@ -1,0 +1,55 @@
+body {
+  font-family: "Josefin Sans";
+  font-size: 1.6rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.alerting {
+  width: 75%;
+  top: 0;
+  right: -100%;
+  background-color: rgba(190, 189, 96, 0.219);
+  transition: all 0.3s ease;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.close {
+  color: #212121;
+  border: 0.1rem solid #616161;
+  border-radius: 0.5rem;
+}
+
+.borders {
+  border: 0.1rem solid #34495588;
+}
+
+.text-area {
+  resize: none;
+}
+
+.yellow-color {
+  color: #f9aa33;
+}
+
+.black-color {
+  color: #344955;
+}
+
+.bg-yellow {
+  background-color: #f9aa33;
+}
+
+::placeholder {
+  opacity: 40%;
+  font-size: 1.2rem;
+}
+
+.todo-title-input {
+  background: transparent;
+  border: none;
+  font-size: inherit;
+  outline: none;
+}

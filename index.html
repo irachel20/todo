@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin Sans"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./bootstrap.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 p-5">
+          <div class="form d-flex flex-column gap-4">
+            <div
+              id="alert"
+              class="alerting position-fixed d-flex p-3 gap-1 align-items-center"
+            >
+              <p class="mb-0 fs-5">please inter atleast a title for your todo</p>
+              <p class="close mb-0 ms-3 px-1 bg-transparenet text-decoration-none" id="close">close</p>
+            </div>
+            <h1 class="todo-heading mt-5 opacity-75 yellow-color text-center">
+              TODO
+            </h1>
+            <input
+              type="text"
+              class="title-input p-2 borders rounded-2"
+              placeholder="inter your title"
+              id="title"
+            />
+            <textarea
+              name=""
+              class="text-area p-2 borders rounded-2"
+              id="desc"
+              cols="30"
+              rows="10"
+              placeholder="type your description here"
+            ></textarea>
+            <button
+              class="submit-btn border-0 bg-yellow text-light w-25 align-self-center rounded-3  py-2 mb-5 fs-5"
+              id="submit"
+            >
+              submit
+            </button>
+            <ul
+              class="opacity-75 main-list black-color "
+              id="main"
+            >
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <noscript>
+      <h1>enable js in your browser</h1>
+    </noscript>
+    <script type="module" src="./modules/index.js"></script>
+  </body>
+</html>
