@@ -88,6 +88,7 @@ const createNewTodo = (title, desc, id, checked) => {
 
   main.appendChild(li);
 };
+
 function renderTodoElements() {
   getLocatedTodos().forEach((todo) =>
     createNewTodo(todo.todoTitle, todo.todoDesc, todo.id, todo.checked)
@@ -127,6 +128,7 @@ main.addEventListener("click", (e) => {
     const filteredTodos = getLocatedTodos().filter(
       (item) => item.id !== Number(id)
     );
+    saveTodos = filteredTodos ;
     localStorage.setItem("todosList", JSON.stringify(filteredTodos));
     main.innerHTML = "";
     renderTodoElements();
@@ -134,6 +136,7 @@ main.addEventListener("click", (e) => {
     const filteredTodo = getLocatedTodos().filter(
       (item) => item.id === Number(id)
     );
+
     const updateFilteredTodo = {
       ...filteredTodo[0],
       checked: true,
